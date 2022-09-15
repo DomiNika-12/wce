@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
 import Project, { ProjectProps } from '../components/project'
-import styles from "../styles/projects.module.css"
+import styles from "../components/projects.module.css"
 
 const data: ProjectProps[] = [
   {

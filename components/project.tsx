@@ -1,5 +1,5 @@
 import { FC } from "react"
-import styles from "../styles/project.module.css"
+import styles from "../components/project.module.css"
 
 export interface ProjectProps {
   title: string,

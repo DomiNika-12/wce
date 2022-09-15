@@ -1,8 +1,8 @@
 
 
 import React from "react";
-import { FC } from "react";
-import styles from "../styles/navbar.module.css";
+import type { FC } from "react";
+import styles from "./navbar.module.css";
 
 export const NavBar: FC = () => {
   return (
