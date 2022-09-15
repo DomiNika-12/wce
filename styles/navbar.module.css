@@ -1,0 +1,61 @@
+.container  {
+    flex-direction: row;
+    display: flex;
+    margin-top: 0;
+    background-color: black;
+    align-items: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
+    box-shadow: 0 0 5px 1px #aaa;
+}
+
+.logo {
+
+  font-size: 72px;
+  background: -webkit-linear-gradient(top right, #2A20AB, #A40515);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #202EAB;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Raleway', sans-serif;; */
+  margin: 20px;
+  font-weight: bold;
+}
+
+.buttons{
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+}
+
+.buttons a{
+    display: block;
+    margin: 20px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+}
+
+.buttons a:hover{
+    color: #696969;
+    transform: scale(1.1);
+}
+
+.links {
+    flex-direction: row;
+    display: flex;
+  }
+
+.links a {
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+}
+
+.links a:hover{
+    color: #696969;
+    transform: scale(1.1);
+}
