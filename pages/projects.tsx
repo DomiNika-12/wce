@@ -8,7 +8,7 @@ const data: ProjectProps[] = [
   {
     title: "Broomball Scoreboard",
     description: "The Broomball Scoreboard team is designing and building three wirelessly-controlled electronic scoreboards for the MTU Broomball Association.  This project utilizes Arduinos and I2C for in-board communication and Xbees for wireless control.  Check out the scoreboards in action on the Broomball website!",
-    sponsor: "MTU"
+    sponsor: "ggggg"
   },
   {
     title: "Drone AI",
