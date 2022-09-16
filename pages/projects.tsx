@@ -26,18 +26,20 @@ const Projects: NextPage = () => {
   return (
     <div>
       <NavBar />
-      <div className={styles.container}>
-
-        <div>Current Projects</div>
-        <p>Currently we are working on the variety of projects that include: ... . Every project is fully managed by the group of 4-6 students with background in electrical engineering, computer science and computer engineering.</p>
-        <div>Past Projects</div>
-        {data.map((e, i) => {
-          return (
-            <Project key={i}
-              title={e.title}
-              description={e.description}
-              sponsor={e.sponsor} />)
-        })}
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <div className={styles.gradientBackground}></div>
+          <div>Current Projects</div>
+          <p>Currently we are working on the variety of projects that include: ... . Every project is fully managed by the group of 4-6 students with background in electrical engineering, computer science and computer engineering.</p>
+          <div>Past Projects</div>
+          {data.map((e, i) => {
+            return (
+              <Project key={i}
+                title={e.title}
+                description={e.description}
+                sponsor={e.sponsor} />)
+          })}
+        </div>
       </div>
       <Footer />
     </div>
