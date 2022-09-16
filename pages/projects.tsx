@@ -2,13 +2,13 @@ import type { NextPage } from 'next'
 import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
 import Project, { ProjectProps } from '../components/project'
-import styles from "../components/projects.module.css"
+import styles from "../styles/projects.module.css"
 
 const data: ProjectProps[] = [
   {
     title: "Broomball Scoreboard",
     description: "The Broomball Scoreboard team is designing and building three wirelessly-controlled electronic scoreboards for the MTU Broomball Association.  This project utilizes Arduinos and I2C for in-board communication and Xbees for wireless control.  Check out the scoreboards in action on the Broomball website!",
-    sponsor: "ggggg"
+    sponsor: "MTU"
   },
   {
     title: "Drone AI",
@@ -27,6 +27,10 @@ const Projects: NextPage = () => {
     <div>
       <NavBar />
       <div className={styles.container}>
+
+        <div>Current Projects</div>
+        <p>Currently we are working on the variety of projects that include: ... . Every project is fully managed by the group of 4-6 students with background in electrical engineering, computer science and computer engineering.</p>
+        <div>Past Projects</div>
         {data.map((e, i) => {
           return (
             <Project key={i}

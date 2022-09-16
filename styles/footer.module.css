@@ -3,8 +3,12 @@
   flex: 1;
   padding: 2rem 0;
   width: 100%;
-  box-shadow: 0 0 5px 1px #aaa;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
+  /* box-shadow: 0 0 5px 1px #aaa; */
   /* border-top: 1px solid #eaeaea; */
+  background-color: black;
   justify-content: center;
   align-items: center;
 }

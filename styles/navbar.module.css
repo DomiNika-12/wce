@@ -8,19 +8,22 @@
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 1;
-    box-shadow: 0 0 5px 1px #aaa;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
+    /* box-shadow: 0 0 5px 1px #aaa; */
 }
 
 .logo {
-
-  font-size: 72px;
+  /* font-size: 72px;
   background: -webkit-linear-gradient(top right, #2A20AB, #A40515);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #202EAB;
+  -webkit-text-fill-color: transparent; */
+  /* color: #202EAB; */
+  color: whitesmoke;
   font-size: 40px;
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Raleway', sans-serif;; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   margin: 20px;
   font-weight: bold;
 }

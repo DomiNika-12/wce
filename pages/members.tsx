@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import { Footer } from '../components/footer'
 import { NavBar } from '../components/navbar'
-import styles from '../components/members.module.css'
+import styles from '../styles/members.module.css'
 
 interface MemberInfo {
   name: string,
@@ -40,11 +39,12 @@ const Members: NextPage = () => {
   return (
     <div>
       <NavBar />
-      <main className={styles.main}>
+      <div className={styles.main}>
+        <p className={styles.projectTitle}>5G Tower</p>
         <div className={styles.members}>
           {data.map((e, i) => {
             return (<div key={i} className={styles.member}>
-              <div>{e.team}</div>
+              {/* <div>{e.team}</div> */}
               <div className={styles.nameMajor}>
                 <div>{e.name}</div>
                 <div className={styles.major}>{e.major}</div>
@@ -53,10 +53,11 @@ const Members: NextPage = () => {
                 <div>{e.email}</div>
                 <div className={styles.linkedin}>{e.linkedin}</div>
               </div>
+              <div className={styles.borderDiv} />
             </div>)
           })}
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
   )
