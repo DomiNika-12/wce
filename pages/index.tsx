@@ -10,7 +10,6 @@ const Home: NextPage = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <div className={styles.blocksBackground}></div>
           <div className={styles.blocks}>
             <div className={styles.title}>Who Are We</div>
             <p className={styles.text}>
@@ -29,6 +28,7 @@ const Home: NextPage = () => {
               We are always looking for sponsors to challenge us with projects across our spectrum of expertise.  Contact our advisor Kit Cischke to get the process started.  Check out our Sponsors page to see who else we’ve worked with.
             </p>
           </div>
+          <div className={styles.blocksBackground}></div>
         </div>
       </div>
       <Footer />

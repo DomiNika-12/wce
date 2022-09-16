@@ -1,6 +1,42 @@
 .wrapper {
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
   border-radius: 20px;
   padding: 20px;
+  margin: 40px;
+}
+
+.text {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.title {
+  line-height: 1.15;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sponsorText {
+  text-align: center;
+}
+
+.sponsorBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:10px
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
 }
 

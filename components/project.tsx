@@ -1,5 +1,5 @@
 import { FC } from "react"
-import styles from "../styles/projects.module.css"
+import styles from "../styles/project.module.css"
 
 export interface ProjectProps {
   title: string,
@@ -12,9 +12,15 @@ export interface ProjectProps {
 const Project: FC<ProjectProps> = (props) => {
   return (
     <div className={styles.wrapper}>
-      <div>{props.title}</div>
-      <p>{props.description}</p>
-      <div>Sponsor: {props.sponsor}</div>
+      <div className={styles.title}>{props.title}</div>
+      <div className={styles.container}>
+        <div className={styles.sponsorBox}>
+          <img src={props.sponsorLogoPath} alt={'sponsor logo'} width={70}></img>
+          <div className={styles.sponsorText}>Sponsor: {props.sponsor}</div>
+        </div>
+        <p className={styles.text}>{props.description}</p>
+
+      </div>
     </div>)
 }
 

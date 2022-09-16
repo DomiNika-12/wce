@@ -1,24 +1,27 @@
+.wrapper {
+  overflow: scroll;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+}
+
 .container {
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   margin-left: 20%;
   align-self: center;
   gap: 100px;
-  margin-bottom: 100px;
 }
 
-.wrapper {
-  overflow: scroll;
-  background-color: black;
-  align-items: center;
-}
-
-.gradientBackground{
+/* .gradientBackground{
   position: fixed;
   display: flex;
-  /* top: 50%; */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 800px;
@@ -27,13 +30,38 @@
 	filter: blur(100px);
   background: radial-gradient(circle at 50% 50%,rgb(156, 21, 45), rgba(76, 0, 255, 0));
   opacity: 0.2;
-}
+} */
 
+.gradientBackground{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: 100%;
+  /* width: 800px;
+  height: 800px; */
+	border-radius: 50% 22% 40% 80%;  
+	filter: blur(100px);
+  background: radial-gradient(circle at 50% 50%,rgb(174, 0, 255), rgba(76, 0, 255, 0));
+  opacity: 0.2;
+}
 .members {
   display: flex;
   flex-direction: column;
+  width:100%;
 }
 
+.projectWrapper {
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
 .member {
   border-top-width: 0.5px;
   border-top-style: solid;
@@ -43,6 +71,7 @@
   padding: 15px;
   display: flex;
   flex-direction: row;
+  width:100%;
 }
 
 .nameMajor {

@@ -7,7 +7,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    z-index: 1;
+    z-index: 100;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
@@ -16,10 +16,17 @@
 
 .logo {
   color: whitesmoke;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Raleway', sans-serif;
   margin: 20px;
   font-weight: bold;
+  text-overflow: none;
+}
+
+@media only screen and (max-width: 1000px)  {
+    .logo {
+        font-size: 20px;
+    }
 }
 
 .buttons{
