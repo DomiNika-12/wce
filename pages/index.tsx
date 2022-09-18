@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <div className={styles.blocks}>
             <div className={styles.title}>Want Us to Work For You</div>
             <p className={styles.text}>
-              We are always looking for sponsors to challenge us with projects across our spectrum of expertise.  Contact our advisor Kit Cischke to get the process started.  Check out our Sponsors page to see who else we’ve worked with.
+              We are always looking for sponsors to challenge us with projects across our spectrum of expertise.  Contact our advisor Kit Cischke to get the process started.
             </p>
           </div>
           <div className={styles.blocksBackground}></div>
