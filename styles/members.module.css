@@ -3,6 +3,7 @@
   background-color: black;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -13,24 +14,16 @@
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin-left: 20%;
   align-self: center;
   gap: 100px;
 }
 
-/* .gradientBackground{
-  position: fixed;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 800px;
-  height: 800px;
-	border-radius: 50% 22% 40% 80%;  
-	filter: blur(100px);
-  background: radial-gradient(circle at 50% 50%,rgb(156, 21, 45), rgba(76, 0, 255, 0));
-  opacity: 0.2;
-} */
+@media only screen and (max-width: 900px)  {
+    .container {
+        width: 90%;
+        gap: 50px;
+    }
+}
 
 .gradientBackground{
   position: absolute;

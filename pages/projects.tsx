@@ -7,31 +7,31 @@ import styles from "../styles/projects.module.css"
 const dataCurrent: ProjectProps[] = [
   {
     title: "Whirlpool",
-    description: "rolled electronic scoreboards for the MTU Broomball Association.  This project utilizes Arduinos and I2C for in-board communication and Xbees for wireless control.  Check out the scoreboards in action on the Broomball website!",
+    description: "",
     sponsor: "Whirlpool",
     sponsorLogoPath: "./whirlpool.png"
   },
   {
     title: "Stellantis",
-    description: "The Drone AI team is building a custom quadcopter with on-board LIDAR, GPS, cameras and other goodies.  The code for the flight controller, LIDAR positioning and other controls is developed in-house.",
+    description: "",
     sponsor: "Stellantis",
-    sponsorLogoPath: ""
+    sponsorLogoPath: "./stellantis.png"
   },
   {
     title: "5G Tower",
-    description: "Michigan Tech’s First-Year Engineering program uses the iRobot Roombas to teach Matlab programming constructs, but they needed a Bluetooth adapter to download the code.  The team constructed the adapter, including an Adafruit Bluetooth board, and 3D printed the case.  Then they taught the students how to use the interface.",
+    description: "",
     sponsor: "MTU",
     sponsorLogoPath: "./mtuHusky.png"
   },
   {
-    title: "Window",
-    description: "Michigan Tech’s First-Year Engineering program uses the iRobot Roombas to teach Matlab programming constructs, but they needed a Bluetooth adapter to download the code.  The team constructed the adapter, including an Adafruit Bluetooth board, and 3D printed the case.  Then they taught the students how to use the interface.",
+    title: "Automatic Window",
+    description: "",
     sponsor: "MTU",
     sponsorLogoPath: "./mtuHusky.png"
   },
   {
-    title: "Band",
-    description: "Michigan Tech’s First-Year Engineering program uses the iRobot Roombas to teach Matlab programming constructs, but they needed a Bluetooth adapter to download the code.  The team constructed the adapter, including an Adafruit Bluetooth board, and 3D printed the case.  Then they taught the students how to use the interface.",
+    title: "Wireless Band",
+    description: "",
     sponsor: "MTU",
     sponsorLogoPath: "./mtuHusky.png"
   }
@@ -109,8 +109,9 @@ const Projects: NextPage = () => {
                 sponsorLogoPath={e.sponsorLogoPath} />)
           })}
         </div>
+        <Footer />
+
       </div>
-      <Footer />
     </div>
   )
 }

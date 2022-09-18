@@ -5,24 +5,29 @@ import styles from '../styles/footer.module.css'
 export const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
-      <a>
-        <img src="wcelogo.png" height={50}></img>
-      </a>
+      <div className={styles.logos}>
+        <a>
+          <img src="wcelogo.png" height={50}></img>
+        </a>
+        <a
+          href="https://mtu.edu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/mtuece.png" alt="MTU ECE logo" height={50} />
+        </a>
+
+      </div>
       <a
-        href="https://mtu.edu"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/mtuece.png" alt="MTU ECE logo" height={50} />
-      </a>
-      {/* <a
         href="https://dominikabobik.com"
         target="_blank"
         rel="noopener noreferrer"
+        className={styles.signature}
       >
-        Website created by @Dominika Bobik
-      </a> */}
+        2022 @Dominika Bobik
+      </a>
     </footer>
+
   )
 }
 

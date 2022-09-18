@@ -3,6 +3,7 @@
   background-color: black;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -13,9 +14,15 @@
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin-left: 20%;
   align-self: center;
   gap: 100px;
+}
+
+@media only screen and (max-width: 900px)  {
+    .container {
+        width: 90%;
+        gap: 50px;
+    }
 }
 
 .blocksBackground{
@@ -36,6 +43,7 @@
   flex-direction: column;
   padding: 20px;
   z-index: 1;
+  align-self: center;
 }
 
 .text {
@@ -48,4 +56,6 @@
   font-size: 30px;
   font-weight: bold;
   align-self: center;
+  text-align: center;
+  padding-top: 20px;
 }

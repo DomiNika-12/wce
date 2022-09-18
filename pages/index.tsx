@@ -30,8 +30,8 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.blocksBackground}></div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div >)
 }
 

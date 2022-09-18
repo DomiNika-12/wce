@@ -11,7 +11,7 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
-    /* box-shadow: 0 0 5px 1px #aaa; */
+    min-height: 80px;
 }
 
 .logo {
@@ -20,10 +20,11 @@
   font-family: 'Raleway', sans-serif;
   margin: 20px;
   font-weight: bold;
-  text-overflow: none;
+  word-wrap: break-word;
+  max-width: 70%;
 }
 
-@media only screen and (max-width: 1000px)  {
+@media only screen and (max-width: 900px)  {
     .logo {
         font-size: 20px;
     }

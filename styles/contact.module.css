@@ -1,9 +1,96 @@
-.main {
+.wrapper {
+  overflow: scroll;
+  background-color: black;
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.pos {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60%;
+  align-self: center;
+}
+
+@media only screen and (max-width: 900px)  {
+    .container {
+        width: 90%;
+    }
+}
+
+.mail {
+  text-decoration: underline;
+  color: royalblue;
+}
+
+.mail:hover{
+    transform: scale(1.1);
+}
+
+.border {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.advisor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.meeting {
+  text-align: center;
+  font-size: 20px;
+}
+
+.form {
+  justify-self: center;
+  overflow: scroll;
+  border-radius: 20px;
+  background-color: black;
+  width: 100%;
+  height: 900px;
+}
+
+.sectionTitle {
+  line-height: 1.15;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.timeText {
+  margin-bottom: 10px;
 }

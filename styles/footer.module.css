@@ -1,9 +1,10 @@
 .footer {
   display: flex;
+  flex-direction: column;
   position: sticky;
   bottom: 0;
   flex: 1;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%;
   border-top-width: 1px;
   border-top-style: solid;
@@ -14,9 +15,34 @@
   z-index: 100;
 }
 
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  flex: 1;
+  width: 100%;
+  margin-bottom: 20px;
+}
 .footer a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.signature {
+  color: rgb(106, 106, 106);
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 500px)  {
+    .footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .logos {
+      flex-direction: column;
+      gap: 10px;
+    }
 }

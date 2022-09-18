@@ -1,9 +1,7 @@
 .wrapper {
-  /* border: 2px solid white; */
   border-width: 2px;
   border-style: solid;
   border-image: linear-gradient(45deg, black, #2A20AB, #A40515, black) 1;
-  border-radius: 20px;
   padding: 20px;
   margin: 40px;
 }
@@ -21,6 +19,8 @@
   align-self: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .sponsorText {
@@ -40,3 +40,21 @@
   flex-direction: row;
 }
 
+@media only screen and (max-width: 900px)  {
+    .container {
+      flex-direction: column;
+    }
+
+    .text {
+      padding: 10px;
+    }
+
+    .wrapper {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+}
