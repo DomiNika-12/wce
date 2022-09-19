@@ -77,6 +77,10 @@
   height: 900px;
 }
 
+.frame {
+  opacity: 1;
+}
+
 .sectionTitle {
   line-height: 1.15;
   font-size: 30px;

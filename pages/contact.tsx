@@ -29,7 +29,7 @@ const Contact: NextPage = () => {
           </div>
 
           <div className={styles.form}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyl-4dae6LIakSsJ4mJaBtSbzD1x14pZyaQ_Rmb7gjFe2X7A/viewform?embedded=true" width="100%" height="100%" frameBorder="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyl-4dae6LIakSsJ4mJaBtSbzD1x14pZyaQ_Rmb7gjFe2X7A/viewform?embedded=true" width="100%" height="100%" frameBorder="0" className={styles.frame}>Loading…</iframe>
           </div>
         </div>
         <Footer />
