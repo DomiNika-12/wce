@@ -24,7 +24,7 @@ const dataCurrent: ProjectProps[] = [
     sponsorLogoPath: "./mtuHusky.png"
   },
   {
-    title: "Automatic Window",
+    title: "Smart Window",
     description: "",
     sponsor: "MTU",
     sponsorLogoPath: "./mtuHusky.png"
@@ -89,7 +89,7 @@ const Projects: NextPage = () => {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.sectionTitle}>Current Projects</div>
-          <p className={styles.text}>Currently we are working on the variety of projects that include: ... . Every project is fully managed by the group of 4-6 students with background in electrical engineering, computer science and computer engineering.</p>
+          <p className={styles.text}>Currently we are working on the variety of projects. Every project is fully managed by the group of 4-6 students with background in electrical engineering, robotics engineering, computer science and computer engineering.</p>
           {dataCurrent.map((e, i) => {
             return (
               <Project key={i}
