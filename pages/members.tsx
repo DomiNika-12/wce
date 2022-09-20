@@ -18,7 +18,7 @@ const data5G: MemberInfo[] = [
     name: "Dominika Bobik",
     major: "Computer Engineering",
     email: "dbobik@mtu.edu",
-    linkedin: "....",
+    linkedin: "https://www.linkedin.com/in/dominika-bobik/",
     team: "5G Tower"
   }
 ]
@@ -98,12 +98,14 @@ const Members: NextPage = () => {
                       <div className={styles.major}>{e.major}</div>
                     </div>
                     <div className={styles.socials}>
+                      {e.linkedin &&
+                        <a href={e.linkedin} target={"_blank"} rel={"noreferrer"}>
+                          <LinkedInIcon className={styles.linkedin} />
+                        </a>}
                       <a href={`mailto:${e.email}`} target={"_blank"} rel={"noreferrer"}>
                         <MailIcon className={styles.mail} />
                       </a>
-                      <a href={`${e.linkedin}`} target={"_blank"} rel={"noreferrer"}>
-                        <LinkedInIcon className={styles.linkedin} />
-                      </a>
+
                     </div>
                     <div className={styles.borderDiv} />
                   </div>)
@@ -125,12 +127,14 @@ const Members: NextPage = () => {
                       <div className={styles.major}>{e.major}</div>
                     </div>
                     <div className={styles.socials}>
+                      {e.linkedin &&
+                        <a href={e.linkedin} target={"_blank"} rel={"noreferrer"}>
+                          <LinkedInIcon className={styles.linkedin} />
+                        </a>}
                       <a href={`mailto:${e.email}`} target={"_blank"} rel={"noreferrer"}>
                         <MailIcon className={styles.mail} />
                       </a>
-                      <a href={`${e.linkedin}`} target={"_blank"} rel={"noreferrer"}>
-                        <LinkedInIcon className={styles.linkedin} />
-                      </a>
+
                     </div>
                     <div className={styles.borderDiv} />
                   </div>)
@@ -151,12 +155,14 @@ const Members: NextPage = () => {
                       <div className={styles.major}>{e.major}</div>
                     </div>
                     <div className={styles.socials}>
+                      {e.linkedin &&
+                        <a href={e.linkedin} target={"_blank"} rel={"noreferrer"}>
+                          <LinkedInIcon className={styles.linkedin} />
+                        </a>}
                       <a href={`mailto:${e.email}`} target={"_blank"} rel={"noreferrer"}>
                         <MailIcon className={styles.mail} />
                       </a>
-                      <a href={`${e.linkedin}`} target={"_blank"} rel={"noreferrer"}>
-                        <LinkedInIcon className={styles.linkedin} />
-                      </a>
+
                     </div>
                     <div className={styles.borderDiv} />
                   </div>)
@@ -177,12 +183,14 @@ const Members: NextPage = () => {
                       <div className={styles.major}>{e.major}</div>
                     </div>
                     <div className={styles.socials}>
+                      {e.linkedin &&
+                        <a href={e.linkedin} target={"_blank"} rel={"noreferrer"}>
+                          <LinkedInIcon className={styles.linkedin} />
+                        </a>}
                       <a href={`mailto:${e.email}`} target={"_blank"} rel={"noreferrer"}>
                         <MailIcon className={styles.mail} />
                       </a>
-                      <a href={`${e.linkedin}`} target={"_blank"} rel={"noreferrer"}>
-                        <LinkedInIcon className={styles.linkedin} />
-                      </a>
+
                     </div>
                     <div className={styles.borderDiv} />
                   </div>)
@@ -198,18 +206,19 @@ const Members: NextPage = () => {
               <div className={styles.members}>
                 {dataSmartWindow.map((e, i) => {
                   return (<div key={i} className={styles.member}>
-                    {/* <div>{e.team}</div> */}
                     <div className={styles.nameMajor}>
                       <div>{e.name}</div>
                       <div className={styles.major}>{e.major}</div>
                     </div>
                     <div className={styles.socials}>
+                      {e.linkedin &&
+                        <a href={e.linkedin} target={"_blank"} rel={"noreferrer"}>
+                          <LinkedInIcon className={styles.linkedin} />
+                        </a>}
                       <a href={`mailto:${e.email}`} target={"_blank"} rel={"noreferrer"}>
                         <MailIcon className={styles.mail} />
                       </a>
-                      <a href={`${e.linkedin}`} target={"_blank"} rel={"noreferrer"}>
-                        <LinkedInIcon className={styles.linkedin} />
-                      </a>
+
                     </div>
                     <div className={styles.borderDiv} />
                   </div>)
